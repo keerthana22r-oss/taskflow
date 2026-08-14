@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: taskflow-backend
+    runtime: python
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    envVars:
+      - key: ALLOWED_ORIGIN
+        sync: false   # set this manually once the frontend URL exists (see README)
+
+  - type: web
+    name: taskflow-frontend
+    runtime: static
+    rootDir: frontend
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
+    envVars:
+      - key: VITE_API_URL
+        sync: false   # set this manually to https://taskflow-backend.onrender.com/api
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
