@@ -236,7 +236,7 @@ Full-Stack & AI Software Engineer
 
 - **GitHub:** [@keerthana22r-oss](https://github.com/keerthana22r-oss)
 - **Email:** [keerthana22r@gmail.com](mailto:keerthana22r@gmail.com)
-- **LinkedIn:** [linkedin.com/in/keerthanakr](https://www.linkedin.com)
+- **LinkedIn:** [linkedin.com/in/keerthana-k-r-9907aa3a8](http://www.linkedin.com/in/keerthana-k-r-9907aa3a8)
 
 ---
 
